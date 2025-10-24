@@ -1,0 +1,152 @@
+@font-face {
+  font-family: reef;
+  src: url(font/Reef.otf)
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;    
+  align-items: center;        
+  background-color: #222222;
+  padding: 10px 20px;
+  z-index: 1000;
+  font-family: reef;
+  box-sizing: border-box;
+  min-height: 60px;           
+}
+
+#header1 ul {
+  display: flex;
+  gap: 30px;                  
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  align-items: center;        
+  height: 100%;
+}
+
+#header1 li {
+  margin: 0;
+  padding: 0;
+}
+
+#header1 li a {
+  display: inline-flex;       
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 6px 14px;         
+  height: 40px;               
+  box-sizing: border-box;
+  background: transparent;    
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+#header1 li a.hyperlink:hover,
+#header1 li a.hyperlink:active {
+    background: #41a3ff;       
+    text-decoration: none;
+    box-shadow: 0 0 10px #41a3ff, 0 0 20px #41a3ff, 0 0 30px #41a3ff;
+    transform: translateY(-2px);
+}
+
+#header1 li.brackets {
+  color: white;
+  font-size: 32px;
+  padding: 1px 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+#header1 li.hyperlink {
+  
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a:link, a:visited {
+  text-decoration: none;
+}
+
+a:hover, a:active {
+  text-decoration: underline;
+}
+
+li.brackets {
+  color: white;
+  font-size: 32px;
+  padding: 1px 20px;
+}
+li.hyperlink {
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-image: 
+    radial-gradient(circle at bottom, rgba(111, 0, 255, 0.2), rgba(0, 0, 0, 0)),
+    url('images/background.png');
+  background-size: cover;
+  background-color: #ffffff;
+  margin: 0;
+  padding-top: 80px;
+  height: 300vh;
+  font-family: reef;
+}
+
+.main h1, h2, p {
+  color: white;
+  display: flex;
+  justify-content: center;
+  padding: 0px 20px;
+  margin: 20px; 
+}
+
+.main h1 {
+  font-size: clamp(2rem, 8vw, 4rem);
+}
+
+.main h2 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+}
+
+.main p {
+  font-size: 40px;
+}
+
+.main {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: black;
+  padding: 20px;
+  width: 50%;
+  justify-self: center;
+  font-size: 50px;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f0f0f0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
